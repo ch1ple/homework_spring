@@ -21,7 +21,7 @@ public class StoreController {
     }
 
     @GetMapping("/add")
-        public void add(@RequestParam("itemIds")List<Item> itemIds){
+        public void add(@RequestParam("itemIds")List<Long> itemIds){
         service.add(itemIds);
         }
     @GetMapping("/get")
